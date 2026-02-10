@@ -1,0 +1,304 @@
+/* General Settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Modern Font */
+}
+
+body {
+    background-color: #fff9f9; /* Slight warm tint */
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #c0392b; /* Dark Red */
+}
+
+.highlight {
+    color: #f1c40f; /* Yellow */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c0392b;
+}
+
+/* Hero Section */
+header {
+    height: 85vh;
+    
+    /* OPTION 1: Pure Image (No Grey Overlay) */
+    background: url('shop-bg.jpg');
+
+    /* OPTION 2: If the text is hard to read, use this line instead (adds a light shadow): 
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('shop-bg.jpg'); 
+    */
+
+    background-size: cover;       /* Ensures the image covers the whole area */
+    background-position: center;  /* Centers the image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    
+    /* Keep these lines to center the text */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(12, 2, 2); /* Make sure text is white to stand out */
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 10px 0;
+    line-height: 1.2;
+}
+
+.tagline {
+    background: #f1c40f;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+/* Buttons */
+.cta-buttons {
+    margin-top: 25px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    margin: 10px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: transform 0.3s;
+}
+
+.call-btn {
+    background-color: #c0392b; /* Red */
+}
+
+.whatsapp-btn {
+    background-color: #25D366; /* Green */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/* Menu Section */
+#menu {
+    /* Test with a web image first */
+    background: url('bg.jpg'); 
+    background-color: #333; /* Dark fallback color */
+    color: white; /* Make text white so it's visible */
+    
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 60px 5%;
+    text-align: center;
+}
+
+
+
+
+h2 {
+    font-size: 2.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #7f8c8d;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+/* Add this to style the "Sales & Repairs" boxes */
+/* --- FIX FOR SALES & REPAIRS SECTION --- */
+.card {
+    /* 1. Add the Image with a Dark Overlay (so text pops) */
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('card-bg.jpg');
+    
+    /* 2. Make the image fit perfectly */
+    background-size: cover;
+    background-position: center;
+
+    /* 3. Change Text Color to White */
+    color: white;
+    
+    /* Keep your existing layout settings */
+    padding: 30px;
+    border-radius: 15px;
+    width: 280px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    border: 1px solid #eee;
+    
+    /* Centering */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Optional: Make the Icon White too so it matches */
+.card i {
+    font-size: 2.5rem;
+    color: #f1c40f; /* Yellow looks great on dark backgrounds */
+    margin-bottom: 15px;
+}
+ 
+
+.icon-box i {
+    font-size: 2.5rem;
+    color: #f1c40f;
+    margin-bottom: 15px;
+}
+
+.food-card h3 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.price {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 5px 15px;
+    background: #fff3cd;
+    color: #856404;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* Info Banner */
+.info-banner {
+    background: #c0392b;
+    color: white;
+    padding: 40px 5%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info-banner div {
+    margin: 10px;
+}
+
+.info-banner i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+/* --- FIX FOR VISIT US SECTION --- */
+#contact {
+    padding: 60px 5%;
+    background: #fff;
+    text-align: center; /* This centers the "Visit Us" title */
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks the Text on top of the Map */
+    align-items: center;    /* Centers everything horizontally */
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-details {
+    text-align: center; /* Centers the Address and Hours text */
+    font-size: 1.1rem;
+    max-width: 800px;   /* Keeps text from stretching too wide */
+}
+
+.map-container {
+    width: 100%;
+    max-width: 700px;   /* Limits map width so it looks good on laptops */
+    height: 380px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    header h1 { font-size: 2.2rem; }
+    .contact-wrapper { flex-direction: column; }
+}
+/* --- FIX FOR SERVICES LAYOUT --- */
+
+/* 1. Target the container holding the cards */
+.service-container {
+    display: flex;            /* This makes them sit in a row */
+    justify-content: center;  /* This pushes them to the center */
+    flex-wrap: wrap;          /* Allows wrapping on mobile screens */
+    gap: 20px;                /* Adds space between the cards */
+    margin-top: 20px;
+}
+
+/* 2. Target the main Section Title ("Our Services") */
+#services h2 {
+    text-align: center;       /* Centers the title text */
+    margin-bottom: 20px;
+}
+
+/* 3. Ensure the main section is centered */
+#services {
+    text-align: center;
+    padding: 40px 5%;
+}
