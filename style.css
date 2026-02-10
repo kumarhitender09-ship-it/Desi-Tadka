@@ -304,9 +304,21 @@ footer {
 
 }
 /* --- FIX FOR MOBILE BACKGROUND ZOOM --- */
+/* --- FIX FOR MOBILE: SHOW FULL IMAGE --- */
 @media (max-width: 768px) {
     header {
-        height: 60vh; /* Reduces height from 85% to 60% on phones */
-        background-position: center; /* Ensures the middle of the image is seen */
+        /* 1. Force the image to fit fully inside the screen width */
+        background-size: contain; 
+        
+        /* 2. Stop it from repeating if the screen is tall */
+        background-repeat: no-repeat;
+        
+        /* 3. Center it vertically */
+        background-position: center;
+        
+        /* 4. ADJUST THIS NUMBER: 
+           Since the image is now smaller, you need less height.
+           Try 40vh, 50vh, or 60vh until the empty space is gone. */
+        height: 50vh; 
     }
 }
